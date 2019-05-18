@@ -1,0 +1,24 @@
+# system default:
+include "/usr/share/X11/locale/en_US.UTF-8/Compose"
+
+<Multi_key> <Tab>          : "♫"   U266B # BEAMED EIGHTH NOTE
+<Multi_key> <Multi_key>    : "♫"   U266B # BEAMED EIGHTH NOTE
+
+<Multi_key> <Left> <Left>  : "←"   U2190 # LEFTWARDS ARROW
+<Multi_key> <Up> <Up>      : "↑"   U2191 # UPWARDS ARROW
+<Multi_key> <Right> <Right>: "→"   U2192 # RIGHTWARDS ARROW
+<Multi_key> <Down> <Down>  : "↓"   U2193 # DOWNWARDS ARROW
+
+<Multi_key> <Home> <Home>  : "⇱"   U21F1 # NORTH WEST ARROW TO CORNER
+<Multi_key> <Prior> <Prior>: "⇞"   U21DE # UPWARDS ARROW WITH DOUBLE STROKE
+<Multi_key> <End> <End>    : "⇲"   U21F2 # SOUTH EAST ARROW TO CORNER
+<Multi_key> <Next> <Next>  : "⇟"   U21DF # DOWNWARDS ARROW WITH DOUBLE STROKE
+
+# nw <Multi_key> <Backspace> <Backspace> : "⌫"   U232B # ERASE TO THE LEFT
+<Multi_key> <Delete> <Delete>       : "⌦"   U2326 # ERASE TO THE RIGHT
+<Multi_key> <Return> <Return>       : "↲"   U21B5 # DOWNWARDS ARROW WITH CORNER LEFTWARDS
+<Multi_key> <Tab> <Tab>             : "⇥"   U21E5 # RIGHTWARDS ARROW TO BAR
+
+<Multi_key> <Escape> <Escape> : "⌧"   U2327 # X IN A RECTANGLE BOX
+<Multi_key> <Insert> <Insert> : "⎀"   U2380 # INSERTION SYMBOL
+# nw <Multi_key> <Undo> <Undo>     : "↶"   U21B6 # ANTICLOCKWISE TOP SEMICIRCLE ARROW
