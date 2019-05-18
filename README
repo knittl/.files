@@ -1,0 +1,11 @@
+# knittl's dot files
+
+To bootstrap local dotfiles, create a clone with the following commands:
+
+    git init --bare "$HOME/.dotfiles"
+    alias cfg='git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
+    cfg remote add origin https://github.com/knittl/.files.git
+    cfg fetch
+    cfg checkout master
+
+Attention: this can interfere with existing config files!
