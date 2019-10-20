@@ -155,3 +155,7 @@ let g:user_emmet_leader_key=','
 " set lisp options
 let g:lisp_rainbow = 1
 au BufRead,BufNewFile *.diy setfiletype lisp
+
+" convert to hex and reverse
+nnoremap <C-H><C-D> :%!xxd<CR>
+nnoremap <C-H><C-R> :%!xxd -r<CR>
