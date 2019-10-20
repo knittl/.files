@@ -144,6 +144,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'pangloss/vim-javascript'
 	Plug 'mattn/emmet-vim'
 	Plug 'tpope/vim-surround'
+	Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " change emmet leader key
