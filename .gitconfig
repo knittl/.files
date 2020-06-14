@@ -1,0 +1,111 @@
+[color]
+	ui = true
+
+[alias]
+	h = help
+	s = svn
+	k = !gitk
+
+	a = add
+	b = branch
+	d = diff
+	f = fetch
+	g = grep
+	i = init
+	l = log
+	m = merge
+	r = remote
+	t = tag
+	ap = add -p
+	bs = bisect
+	ca = commit -v --amend
+	cc = commit --amend --no-edit
+	ci = commit -v
+	co = checkout
+	cp = cherry-pick
+	dw = diff --color-words
+	dc = diff --color-words="." # minimal diff (charwise)
+	ff = merge --ff-only
+	lg = log --oneline --graph
+	lk = log --oneline --graph --decorate
+	ll = log --oneline #--decorate
+	ln = log --name-status
+	lp = log -p
+	ls = log --stat
+	pl = pull
+	ps = push
+	rb = rebase
+	sh = show
+	sl = shortlog
+	st = status -sb
+	ui = gui
+	wc = whatchanged
+	cfg = config
+	fix = commit -v --fixup
+	pop = stash pop
+	psf = push -f
+	rba = rebase -i --autosquash
+	ref = reflog
+	sub = submodule
+	#top = log --oneline --decorate -n10
+	#top = !sh -c 'git log --oneline --decorate -n${1:-10}' -
+	top = "!f() { \
+		n=${1:-10}; \
+		test $1 && shift; \
+		git log --oneline --decorate -n$n \"$@\"; \
+		}; f"
+	wcp = whatchanged -p
+	head = log -1 --oneline --shortstat HEAD
+	stat = diff --stat
+	amend = commit -v --amend
+	sstat = diff --shortstat
+	lstat = log --stat
+	serve = daemon --verbose --reuseaddr --export-all \
+		--base-path=. ./.git
+	serve-bare = daemon --verbose --reuseaddr --export-all \
+		--base-path=. .
+	add-commit = "!git add -A; git commit"
+	mt = mergetool
+	cooking = "!f() { \
+		b=\"${1:-HEAD}\"; \
+		git branch --no-merged \"$b\" | grep -v '^\\*'; \
+		}; f"
+
+[user]
+	name = Daniel Knittl-Frank
+	email = knittl89+git@googlemail.com
+	signingkey = C3624F037705427ADE61C971AD815381D46337FA
+
+[sendemail]
+	from=Daniel Knittl-Frank <knittl89+git@googlemail.com>
+	#from=Daniel Knittl-Frank <knittl89@googlemail.com>
+	smtpEncryption=tls
+	smtpServer=smtp.gmail.com
+	smtpUser=knittl89+git@googlemail.com
+	smtpServerPort=587
+
+[push]
+	default = tracking
+[mergetool]
+	keepBackup = false
+[gui]
+	commitmsgwidth = 72
+[column]
+	ui = auto,dense
+[core]
+	excludesfile = /home/knittl/.gitignore
+	editor = vim
+	commitGraph = true
+
+[pager]
+	status = true
+[color "grep"]
+	filename = yellow
+[advice]
+	ignoredHook = false
+[gc]
+	writeCommitGraph = true
+[push]
+	default = current
+[rebase]
+	autostash = true
