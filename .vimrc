@@ -148,6 +148,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'tpope/vim-commentary'
 	Plug 'tpope/vim-repeat'
 	Plug 'tpope/vim-sleuth'
+	Plug 'vim-scripts/argtextobj.vim'
 call plug#end()
 
 " change emmet leader key
