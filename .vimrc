@@ -149,7 +149,13 @@ call plug#begin('~/.vim/plugged')
 	Plug 'tpope/vim-repeat'
 	Plug 'tpope/vim-sleuth'
 	Plug 'vim-scripts/argtextobj.vim'
+	Plug 'machakann/vim-highlightedyank'
 call plug#end()
+
+" remap yank to highlight
+if !exists('##TextYankPost')
+  map y <Plug>(highlightedyank)
+endif
 
 " change emmet leader key
 let g:user_emmet_leader_key=','
