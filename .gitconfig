@@ -70,6 +70,7 @@
 		b=\"${1:-HEAD}\"; \
 		git branch --no-merged \"$b\" | grep -v '^\\*'; \
 		}; f"
+	last = "!f() {\n  git reflog | awk '/checkout: moving from/ && !seen[$NF]++ {print $NF}' | head \"-${1:-8}\";\n}; f \"$@\""
 
 [user]
 	name = Daniel Knittl-Frank
