@@ -41,7 +41,7 @@
 	ui = gui
 	wc = whatchanged
 	cfg = config
-	fix = ci --fixup
+	fix = "!f(){ git ci --fixup \"${1:-HEAD}\";};f"
 	pop = stash pop
 	psf = ps --force-with-lease
 	psu = ps -u
