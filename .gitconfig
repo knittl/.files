@@ -51,6 +51,8 @@
 	psf = ps --force-with-lease
 	psu = ps -u
 	rba = rb -i --autosquash
+	rbu = rba @{u}
+	rbam = "!f() { git rba \"$(git merge-base \"${1:-\"$(git rev-parse --symbolic @{u} 2>/dev/null || echo origin)\"}\" @)\"; };f"
 	ref = reflog
 	sub = submodule
 	#top = log --oneline --decorate -n10
