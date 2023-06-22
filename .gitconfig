@@ -112,3 +112,5 @@
 	default = current
 [rebase]
 	autostash = true
+[repack]
+	writeBitmaps = true
