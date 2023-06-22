@@ -39,6 +39,11 @@
 	sl = shortlog
 	st = status -sb
 	ui = gui
+	up = "!f(){ \
+		remote=${2:+$1}; \
+		branch=${2:-$1}; \
+		git f \"${remote:-origin}\" ${branch:+\"$branch:$branch\"}; \
+		};f"
 	wc = whatchanged
 	cfg = config
 	fix = "!f(){ git ci --fixup \"${1:-HEAD}\";};f"
