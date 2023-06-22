@@ -114,3 +114,5 @@
 	autostash = true
 [repack]
 	writeBitmaps = true
+[merge]
+	conflictstyle = zdiff3
