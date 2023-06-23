@@ -169,3 +169,4 @@ au BufRead,BufNewFile *.diy setfiletype lisp
 " convert to hex and reverse
 nnoremap <C-H><C-D> :%!xxd<CR>
 nnoremap <C-H><C-R> :%!xxd -r<CR>
+noremap <C-J><C-J> :.!jq<CR>
