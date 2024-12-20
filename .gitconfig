@@ -123,3 +123,5 @@
 	writeBitmaps = true
 [merge]
 	conflictstyle = zdiff3
+[branch]
+	sort = -committerdate
