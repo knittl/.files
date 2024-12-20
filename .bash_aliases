@@ -9,6 +9,8 @@ alias e='$EDITOR'
 alias grep='grep --color=auto'
 alias less='less -FRX'
 
+alias gw='./gradlew'
+
 alias cfg='git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 
 alias ip='ip -c'
