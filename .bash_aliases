@@ -10,3 +10,5 @@ alias grep='grep --color=auto'
 alias less='less -FRX'
 
 alias cfg='git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
+
+alias ip='ip -c'
