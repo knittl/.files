@@ -20,7 +20,7 @@
 	bs = bisect
 	ca = ci --amend
 	cc = ca --no-edit
-	ci = commit -v
+	ci = commit
 	co = checkout
 	cp = cherry-pick
 	dw = d --color-words
@@ -126,3 +126,5 @@
 	conflictstyle = zdiff3
 [branch]
 	sort = -committerdate
+[commit]
+	verbose = 2
