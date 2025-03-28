@@ -128,3 +128,5 @@
 	sort = -committerdate
 [commit]
 	verbose = 2
+[rerere]
+	enabled = true
