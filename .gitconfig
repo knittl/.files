@@ -17,6 +17,7 @@
 	r = remote
 	t = tag
 	ap = a -p
+	bb = b -vv
 	bs = bisect
 	ca = ci --amend
 	cc = ca --no-edit
@@ -24,14 +25,14 @@
 	co = checkout
 	cp = cherry-pick
 	dw = d --color-words
-	dc = d --color-words="." # minimal diff (charwise)
+	dc = d --color-words=. # minimal diff (charwise)
 	ff = merge --ff-only
 	lg = ll --graph
 	lk = lg --decorate
 	ll = l --oneline #--decorate
 	ln = l --name-status
 	lp = l -p
-	ls = l --stat
+	ls = l --compact-summary
 	pl = pull
 	ps = push
 	rb = rebase
@@ -45,6 +46,9 @@
 		git f \"${remote:-origin}\" ${branch:+\"$branch:$branch\"}; \
 		};f"
 	wc = whatchanged
+	bsb = bs bad
+	bsg = bs good
+	bss = bs skip
 	cfg = config
 	cim = ci -m
 	fix = "!f(){ git ci --fixup \"${1:-HEAD}\";};f"
